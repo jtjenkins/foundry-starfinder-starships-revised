@@ -71,7 +71,7 @@ let form = `
         <tr>
             <td style="text-align:center">Glide</td>
             <td style="text-align:center">10</td>
-            <td style="text-align:center"0</td>
+            <td style="text-align:center">0</td>
             <td style="text-align:center">Move your speed in a straight line. -1 to TL</td>
         </tr>
         <tr>
