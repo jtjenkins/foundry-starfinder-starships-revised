@@ -197,7 +197,7 @@ title: "Roll Captain Action",
 content: form,
 buttons: {
  one: {
-  icon: '<i class="fas fa-check"></i>',
+  icon: '<i class="fas fa-dice-d20"></i>',
   label: "Roll",
   callback: () => applyChanges = true
  }
