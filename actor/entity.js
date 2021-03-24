@@ -10,8 +10,5 @@ export default class ActorSheetStarshipRevised extends ActorSheet {
 
   /** @override */
   get template() {
-    return `modules/starfinder-starships-revised/templates/starship-revised.html`;
-  }
-
-
+    return `modules/starfinder-starships-revised/templates/starship-revised.html`
 }
