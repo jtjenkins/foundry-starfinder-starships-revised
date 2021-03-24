@@ -9,7 +9,7 @@ let toChat = (content, rollString) => {
         let roll = new Roll(rollString).roll();
         chatData = {
             ...chatData,
-            flavor: "Piloting",
+            flavor: "Sensors",
             type: CONST.CHAT_MESSAGE_TYPES.ROLL,
             roll
           }
@@ -291,7 +291,7 @@ let roll = (html) => {
 }
 var applyChanges = false
 let d = new Dialog({
-title: "Roll Engineer Action",
+title: "Roll Science Officer Action",
 content: form,
 buttons: {
  one: {
