@@ -1,0 +1,21 @@
+{
+    "SSR.AC": "AC",
+    "SSR.BP": "Build Points",
+    "SSR.Frame": "Frame",
+    "SSR.HP": "Hull Points",
+    "SSR.HPMax": "Max HP",
+    "SSR.PCU": "PCU",
+    "SSR.PCUMax": "Max PCU",
+    "SSR.PCURegen": "Regen",
+    "SSR.PCUSpecial": "PCU Special Material",
+    "SSR.Sensors": "Sensors",
+    "SSR.Size": "Size",
+    "SSR.SizeMod": "Size Mod",
+    "SSR.SP": "Shield Points",
+    "SSR.SPMax": "Max SP",
+    "SSR.SPRating": "Rating",
+    "SSR.SPRestoreDC": "Restore DC",
+    "SSR.Speed": "Speed",
+    "SSR.Tier": "Tier",
+    "SSR.TL": "TL"
+}

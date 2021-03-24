@@ -18,13 +18,21 @@ let toChat = (content, rollString) => {
 }
 
 let form = `
-    <h3>Engineer Actions</h3>
+    <h3>Science Officer Actions</h3>
     <br/>
-    Engineers use their actions to transfer power to various parts of the ship and to repair damaged systems.
+    <b>Primary Skill:</b> Computers
+    <br/>
+    <b>Alternate Skill:</b> Perception
+    <br/>
+    <b>Support Skills:</b> Computers, Any Science, Perception
+    <br/><br/>
+    Science Officer actions help gain valuable information.
+    <br/>
+    Your starship’s sensors have a listed range, and you take a -2 penalty per hex your target is beyond that range. Some actions also have an optional Sweep effect that allow you to scan multiple targets at once, with a penalty.
     <br/><br/>
     <form>
         <div class='form-group'>
-            <label>Engineering Modifier</label>
+            <label>Skill Modifier</label>
             <input type='number' name='modifier'></input>
         </div>
         <div class='form-group'>
@@ -33,13 +41,16 @@ let form = `
         </div>
         <div class='form-group'>
             <label>Action</label>
-            <select name='action' id='engineer-action'>
-                <option value='divert'>Divert</option>
-                <option value='maintain-levels'>Maintain Levels</option>
-                <option value='restore-shields'>Restore Shields</option>
-                <option value='patch-system'>Patch System</option>
-                <option value='hold-it-together'>Hold It Together</option>
-                <option value='emergency-repairs'>Emergency Repairs</option>
+            <select name='action' id='science-officer-action'>
+                <option value='identify'>Identify</option>
+                <option value='analyze-system'Analyze System</option>
+                <option value='target-system'>Target System</option>
+                <option value='update-status'>Update Status</option>
+                <option value='activate-module'>Activate ECM Module</option>
+                <option value='intercept-comms'>Intercept Comms</option>
+                <option value='encrypt-comms'>Encrypt Comms</option>
+                <option value='lock-on'>Lock On</option>
+                <option value='overload-sensors'>Overload Sensors</option>
             </select>
         </div>
     </form>
@@ -52,16 +63,16 @@ let form = `
             <th>Effect</th>
         </tr>
         <tr>
-            <td style="text-align:center">Divert</td>
-            <td style="text-align:center">13<br/>+4/ energized system</td>
-            <td style="text-align:center">3 +1/sys</td>
-            <td style="text-align:center">Energize a new system</td>
+            <td style="text-align:center">Identify</td>
+            <td style="text-align:center">TL</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center"Learn basic information about the target</td>
         </tr>
         <tr>
-            <td style="text-align:center">Maintain Levels</td>
-            <td style="text-align:center">10<br/>+4/energized system</td>
-            <td style="text-align:center">1/sys</td>
-            <td style="text-align:center">Keep systems energized</td>
+            <td style="text-align:center">Analyze System</td>
+            <td style="text-align:center">TL</td>
+            <td style="text-align:center">1</td>
+            <td style="text-align:center">Learn detailed information about one of an Identified Target’s systems</td>
         </tr>
         <tr>
             <td style="text-align:center">Restore Shields</td>
